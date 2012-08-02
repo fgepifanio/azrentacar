@@ -1,0 +1,132 @@
+[15-07-2012 16:15:03]: 42S22:1054:Unknown column 'u' in 'where clause'
+QUERY: SELECT username FROM cliente WHERE u  
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 16:15:21]: 42S22:1054:Unknown column 'u' in 'where clause'
+QUERY: SELECT username FROM cliente WHERE u  
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 17:49:13]: 42S22:1054:Unknown column 'password_again' in 'field list'
+QUERY: INSERT INTO cliente (username,password,password_again,email,email_alt,nome,data_nascimento,morada,morada2,localidade,codigo_postal,codigo_postal2,telefone,fax,telemovel,nif,numIdentificacao) VALUES('teste','4394f3cd51f7959891263ee5aa9c06d08dc5b230','aaax','david.sfilipe@gmail.com','xuta@gmail.com','Antonio','2012-07-12','Teste','Teste','Teste','1112','111','2223445555555','11111','222333','1111','22333') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:01:59]: 42S22:1054:Unknown column 'password_again' in 'field list'
+QUERY: INSERT INTO cliente (username,password,password_again,nome,data_nascimento,morada,morada2,localidade,codigo_postal,codigo_postal2,telefone,telefone_alt,submited) VALUES('aaa','7e240de74fb1ed08fa08d38063f6a6a91462a815','aaa','aaa','2012-07-04','aaa','aaa','aaaa','2111','222','112344111','221111111','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:04:47]: 42S22:1054:Unknown column 'codigo_postal' in 'field list'
+QUERY: INSERT INTO cliente (username,password,email,email_alt,nome,data_nascimento,morada,morada2,localidade,codigo_postal,codigo_postal2,telefone,telefone_alt,fax,nif,numIdentificacao) VALUES('username2','70c881d4a26984ddce795f6f71817c9cf4480e79','sinister@aaa.aaa','teste@hotmail.com','aaa','2012-07-04','aaaa','aaa','aaaa','1111','2222','123456789','123456789','123456788','2222222','333') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:10:41]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:11:43]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:12:54]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:19:11]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:20:27]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[15-07-2012 18:20:53]: 42S22:1054:Unknown column 'username2' in 'field list'
+QUERY: INSERT INTO cliente (username2,password,nome,data_nascimento,tipoIdentificacao) VALUES('aaa','70c881d4a26984ddce795f6f71817c9cf4480e79','aaaa','2012-07-11','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[22-07-2012 19:30:16]: 42S22:1054:Unknown column 'cond_condutor' in 'field list'
+QUERY: INSERT INTO cliente (username,password,cond_condutor,cond_num_carta,nome,data_nascimento,tipoIdentificacao) VALUES('teste','2e6f9b0d5885b6010f9167787445617f553a735f','1','111','teste','2012-07-10','1') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[22-07-2012 20:39:29]: 42S02:1146:Table 'azrentcar.categorias_carta' doesn't exist
+QUERY: SELECT categoria FROM categorias_carta 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[22-07-2012 20:40:41]: 42S22:1054:Unknown column 'teste' in 'field list'
+QUERY: INSERT INTO condutor ( id_cliente, num_carta) VALUES(13,teste) 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[23-07-2012 23:39:32]: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacar/src/Web/reservation.php
+
+[24-07-2012 02:03:29]: 42S02:1146:Table 'azrentcar.condutor_categorias_carta' doesn't exist
+QUERY: INSERT INTO condutor_categorias_carta (id_categoria,data_emissao) VALUES(3, '2006-07-12') 
+PAGE: /azrentacar/src/Web/registationForm.php
+
+[27-07-2012 12:16:51]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:22:12]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:22:15]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:25:01]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:25:03]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:25:06]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[27-07-2012 12:25:17]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/reservation.php
+
+[27-07-2012 12:25:22]: Access denied for user 'azrentac_user'@'localhost' (using password: YES)
+QUERY:  
+PAGE: /azrentacarv2/src/Web/reservation.php
+
+[27-07-2012 14:14:53]: Table 'azrentac_db.perfis_client' doesn't exist
+QUERY: SELECT * FROM perfis_client WHERE id_cliente=2 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[27-07-2012 14:28:43]: Table 'azrentac_db.perfiscliente' doesn't exist
+QUERY: SELECT * FROM perfiscliente WHERE id_cliente=2 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[27-07-2012 14:28:52]: Table 'azrentac_db.perfiscliente' doesn't exist
+QUERY: SELECT * FROM perfiscliente WHERE id_cliente=2 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[27-07-2012 14:29:27]: Table 'azrentac_db.perfiscliente' doesn't exist
+QUERY: SELECT * FROM perfiscliente WHERE id_cliente=2 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[02-08-2012 00:33:31]: 
+QUERY: INSERT INTO condutor (condutor,num_carta,id_cliente) VALUES('1','A12012300123','1') 
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[02-08-2012 00:42:55]: 42S22:1054:Unknown column 'condutor' in 'field list'
+QUERY: INSERT INTO condutor (condutor,num_carta,id_cliente) VALUES('1','14234234','2') 
+PAGE: /azrentacarv2/src/Web/registationForm.php
+
+[02-08-2012 00:55:35]: 42S02:1146:Table 'azrentac_db.perfis_cliente' doesn't exist
+QUERY: SELECT * FROM perfis_cliente WHERE id_cliente=1 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[02-08-2012 00:55:48]: 42S02:1146:Table 'azrentac_db.perfis_cliente' doesn't exist
+QUERY: SELECT * FROM perfis_cliente WHERE id_cliente=1 and perfil=1  
+PAGE: /azrentacarv2/src/Web/login.php
+
+[02-08-2012 01:10:18]: 42S02:1146:Table 'azrentac_db.perfis_cliente' doesn't exist
+QUERY: SELECT * FROM perfis_cliente WHERE id_cliente=3 and perfil=1  
+PAGE: /azrentacar/src/Web/login.php
+
