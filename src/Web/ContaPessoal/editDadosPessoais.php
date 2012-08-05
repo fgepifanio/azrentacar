@@ -3,8 +3,7 @@ include ('../Interface.php');
 include ('../../Services/ListDadosPessoais.php');
 include_once ('../../../config.php');
 
-echo 'Em fase de desenvolvimento';
-die();
+
 	try {
 $dados = new ListDadosPessoais($_SESSION['userID']);
 $dadosPessoais = $dados->getDados();

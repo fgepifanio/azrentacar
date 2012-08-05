@@ -60,7 +60,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bem vindo <?php echo $_SESSION['shortName']; ?>! <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     <li class="nav-header"><i class="icon-user"></i> Conta</li>
-                    <!--li><a onclick="getAjax('src/Web/ContaPessoal/editDadosPessoais.php')">Dados Pessoais</a></li-->
+                    <li><a onclick="getAjax('src/Web/ContaPessoal/editDadosPessoais.php')">Dados Pessoais</a></li>
                     <li><a onclick="getAjax('src/Web/ContaPessoal/changePassword.php')">Alterar Password</a></li>
                     <li><a onclick="getAjax('src/Web/ContaPessoal/condutoresOptions.php')">Condutores</a></li> 
                     <!--li><a onclick="">Ver Reservas</a></li-->         
