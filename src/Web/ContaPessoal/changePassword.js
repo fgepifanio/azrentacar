@@ -11,7 +11,7 @@ $("#changePassForm").validate({
 
 
 		password: {
-			required: true,
+			required: true
 			
 		},
 		

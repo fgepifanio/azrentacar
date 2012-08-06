@@ -8,6 +8,7 @@ include_once ('../../../config.php');
 $condutores = new ListCondutores($_SESSION['userID']);
 
 $condutores = $condutores->getCondutores();
+
 ?>
 <ul class="pager pull-left">
   <li>
@@ -27,15 +28,23 @@ foreach($condutores as $num => $condutor){
 	<tr>
 	<td><?php echo $num+1;?></td>
 	<td>
-	
-	<?php 
-	if(empty($condutor['nome'])){?>
+	<form id='edit_condutor<?php echo $num;?>' name='edit_condutor<?php echo $num;?>'>
+	<?php
+	 foreach($condutor as $nome => $valor){?>
+	 	
+	 	<input type='hidden' id='<?php echo $nome;?>' name='<?php echo $nome;?>' value='<?php echo $valor;?>' />
+	 <?php }
+	if(empty($condutor['nome'])){
+
+		?>
 		<span class="label label-info">Eu próprio</span> 
 	<?php echo $_SESSION['name'];}
 	else{
+		
 		echo $condutor['nome'];
-	}?></td>
-	<td><button type='button'>Editar</button></td>
+	}?>
+	</form></td>
+	<td><button type='button' onclick="postAjax('src/Web/ContaPessoal/editCondutor.php',$('#edit_condutor<?php echo $num;?>').serialize())">Editar</button></td>
 	</tr>
 <?php }
 ?>

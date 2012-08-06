@@ -34,7 +34,7 @@ $("#registerForm").validate({
 
 	},
 
-	messages : {
+	messages: {
 
 		email : {
 			email : "Endereço de email não é válido."

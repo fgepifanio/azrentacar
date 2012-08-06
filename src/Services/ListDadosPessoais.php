@@ -1,5 +1,6 @@
 <?php
 require_once('../../Domain/Gestor.php');
+
 class ListDadosPessoais{
 private $dados;
 private $condutorInfo;

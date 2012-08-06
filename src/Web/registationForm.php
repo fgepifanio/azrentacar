@@ -23,7 +23,7 @@ if ($_POST ['submited']) {
 		 */
 	} catch ( exception $e ) {
 		WebInterface::drawError ( $e->getMessage () );
-	
+	echo "<script>scroll(0,0);</script>";
 	}
 
 }

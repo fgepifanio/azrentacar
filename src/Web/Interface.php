@@ -129,7 +129,9 @@ class GeneralForms {
 
 class ClientForms {
 	
-	public static function drawDadosCondutor(){?>
+	public static function drawDadosCondutor($condutorInfo = null){
+	
+		?>
 		
 		<table class='table table-1stcolright' width='100%' >
 	<tr>
@@ -140,25 +142,25 @@ class ClientForms {
 		<td width='30%'><b>Que Categorias Possui?</b></td>
 		<td>
 		<div rel='buttonset'  >
-			<input type='checkbox' value='1' name='cond_cat_cartaA1' id='cond_cat_cartaA1' onclick="$('#categoriaA1').toggle()"  /> <label for='cond_cat_cartaA1'>A1</label>
-			<input type='checkbox'  value='2' name='cond_cat_cartaA' id='cond_cat_cartaA' onclick="$('#categoriaA').toggle()" ><label for='cond_cat_cartaA'>A</label>
-			<input type='checkbox' value='3'  name='cond_cat_cartaB' id='cond_cat_cartaB' onclick="$('#categoriaB').toggle()" ><label for='cond_cat_cartaB'>B</label>
-			<input type='checkbox'  value='4' name='cond_cat_cartaC' id='cond_cat_cartaC' onclick="$('#categoriaC').toggle()" ><label for='cond_cat_cartaC'>C</label>
-			<input type='checkbox'  value='5' name='cond_cat_cartaD' id='cond_cat_cartaD' onclick="$('#categoriaD').toggle()" ><label for='cond_cat_cartaD'>D</label>
-			<input type='checkbox'  value='6' name='cond_cat_cartaBE' id='cond_cat_cartaBE' onclick="$('#categoriaBE').toggle()" ><label for='cond_cat_cartaBE'>BE</label>
-			<input type='checkbox' value='7' name='cond_cat_cartaCE' id='cond_cat_cartaCE' onclick="$('#categoriaCE').toggle()" ><label for='cond_cat_cartaCE'>CE</label>
-			<input type='checkbox' value='8' name='cond_cat_cartaDE' id='cond_cat_cartaDE' onclick="$('#categoriaDE').toggle()" ><label for='cond_cat_cartaDE'>DE</label>
+			<input type='checkbox' value='1' name='cond_cat_cartaA1' id='cond_cat_cartaA1' <?php if(isset($condutorInfo['cond_cat_cartaA1'])){ echo "checked='checked'";}?> onclick="$('#categoriaA1').toggle()"  /> <label for='cond_cat_cartaA1'>A1</label>
+			<input type='checkbox'  value='2' name='cond_cat_cartaA' id='cond_cat_cartaA' <?php if(isset($condutorInfo['cond_cat_cartaA'])){ echo "checked='checked'";}?> onclick="$('#categoriaA').toggle()" ><label for='cond_cat_cartaA'>A</label>
+			<input type='checkbox' value='3'  name='cond_cat_cartaB' id='cond_cat_cartaB' <?php if(isset($condutorInfo['cond_cat_cartaB'])){ echo "checked='checked'";}?> onclick="$('#categoriaB').toggle()" ><label for='cond_cat_cartaB'>B</label>
+			<input type='checkbox'  value='4' name='cond_cat_cartaC' id='cond_cat_cartaC' <?php if(isset($condutorInfo['cond_cat_cartaC'])){ echo "checked='checked'";}?> onclick="$('#categoriaC').toggle()" ><label for='cond_cat_cartaC'>C</label>
+			<input type='checkbox'  value='5' name='cond_cat_cartaD' id='cond_cat_cartaD'  <?php if(isset($condutorInfo['cond_cat_cartaD'])){ echo "checked='checked'";}?> onclick="$('#categoriaD').toggle()" ><label for='cond_cat_cartaD'>D</label>
+			<input type='checkbox'  value='6' name='cond_cat_cartaBE' id='cond_cat_cartaBE'  <?php if(isset($condutorInfo['cond_cat_cartaBE'])){ echo "checked='checked'";}?>  onclick="$('#categoriaBE').toggle()" ><label for='cond_cat_cartaBE'>BE</label>
+			<input type='checkbox' value='7' name='cond_cat_cartaCE' id='cond_cat_cartaCE'  <?php if(isset($condutorInfo['cond_cat_cartaCE'])){ echo "checked='checked'";}?> onclick="$('#categoriaCE').toggle()" ><label for='cond_cat_cartaCE'>CE</label>
+			<input type='checkbox' value='8' name='cond_cat_cartaDE' id='cond_cat_cartaDE'  <?php if(isset($condutorInfo['cond_cat_cartaDE'])){ echo "checked='checked'";}?> onclick="$('#categoriaDE').toggle()" ><label for='cond_cat_cartaDE'>DE</label>
 		</div>
 		</td>
 	</tr>
-	<tr id='categoriaA1' style='display:none' > <td> <b>Data emissão A1:</b> </td>	<td> <input id='cond_cat_cartaA1_data' name='cond_cat_cartaA1_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaA' style='display:none' > <td> <b>Data emissão A:</b> </td>	<td> <input id='cond_cat_cartaA_data' name='cond_cat_cartaA_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaB' style='display:none' > <td> <b>Data emissão B:</b> </td>	<td> <input id='cond_cat_cartaB_data' name='cond_cat_cartaB_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaC' style='display:none' > <td> <b>Data emissão C:</b> </td>	<td> <input id='cond_cat_cartaC_data' name='cond_cat_cartaC_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaD' style='display:none' > <td> <b>Data emissão D:</b> </td>	<td> <input id='cond_cat_cartaD_data' name='cond_cat_cartaD_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaBE' style='display:none' > <td> <b>Data emissão BE:</b> </td>	<td> <input id='cond_cat_cartaBE_data' name='cond_cat_cartaBE_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaCE' style='display:none' > <td> <b>Data emissão CE:</b> </td>	<td> <input id='cond_cat_cartaCE_data' name='cond_cat_cartaCE_data' type='text' rel='picker' /> </td></tr>
-	<tr id='categoriaDE' style='display:none' > <td> <b>Data emissão DE:</b> </td>	<td> <input id='cond_cat_cartaDE_data' name='cond_cat_cartaDE_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaA1'  <?php if(!isset($condutorInfo['cond_cat_cartaA1'])){ ?> style='display:none' <?php }?> > <td> <b>Data emissão A1:</b> </td>	<td> <input id='cond_cat_cartaA1_data' name='cond_cat_cartaA1_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaA'  <?php if(!isset($condutorInfo['cond_cat_cartaA'])){ ?> style='display:none' <?php }?> > <td> <b>Data emissão A:</b> </td>	<td> <input id='cond_cat_cartaA_data' name='cond_cat_cartaA_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaB'  <?php if(!isset($condutorInfo['cond_cat_cartaB'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão B:</b> </td>	<td> <input id='cond_cat_cartaB_data' name='cond_cat_cartaB_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaC'  <?php if(!isset($condutorInfo['cond_cat_cartaC'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão C:</b> </td>	<td> <input id='cond_cat_cartaC_data' name='cond_cat_cartaC_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaD'  <?php if(!isset($condutorInfo['cond_cat_cartaD'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão D:</b> </td>	<td> <input id='cond_cat_cartaD_data' name='cond_cat_cartaD_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaBE'  <?php if(!isset($condutorInfo['cond_cat_cartaBE'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão BE:</b> </td>	<td> <input id='cond_cat_cartaBE_data' name='cond_cat_cartaBE_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaCE'   <?php if(!isset($condutorInfo['cond_cat_cartaCE'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão CE:</b> </td>	<td> <input id='cond_cat_cartaCE_data' name='cond_cat_cartaCE_data' type='text' rel='picker' /> </td></tr>
+	<tr id='categoriaDE'  <?php if(!isset($condutorInfo['cond_cat_cartaDE'])){ ?> style='display:none' <?php }?>  > <td> <b>Data emissão DE:</b> </td>	<td> <input id='cond_cat_cartaDE_data' name='cond_cat_cartaDE_data' type='text' rel='picker' /> </td></tr>
 </table>
 		
 		
